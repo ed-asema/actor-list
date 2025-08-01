@@ -26,7 +26,7 @@ async function createUser() {
     avatar: inputs[1].value.trim()
   }
 
-  if (!newUser.name || !newUser.avatar) return alert("Заполни оба поля!")
+  if (!newUser.name || !newUser.avatar) return alert("Enter both fields!")
 
   await fetch(API_URL, {
     method: "POST",
