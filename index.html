@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Students</title>
+  </head>
+
+  <body class="p-4 bg-gray-50">
+    <div>
+      <button
+        id="add"
+        class="bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Add actors
+      </button>
+
+      <div class="box hidden mt-4">
+        <input
+          type="text"
+          class="shadow border rounded py-2 px-3 text-gray-700 mr-2"
+          placeholder="Enter actor's name"
+        />
+        <input
+          type="text"
+          class="shadow border rounded py-2 px-3 text-gray-700 mr-2"
+          placeholder="Photo URL"
+        />
+        <button
+          id="add2"
+          class="bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+
+    
+    <div
+      id="users"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-6"
+    ></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
